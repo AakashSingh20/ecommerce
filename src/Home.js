@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { HeroSection } from './Components/HeroSection'
 import { Services } from './Components/Services'
 import { Trusted } from './Components/Trusted'
+import FeatureProduct from './Components/FeaturedProducts'
 
 export const Home = () => {
 
@@ -12,6 +13,7 @@ export const Home = () => {
   return (
     <>
     <HeroSection myData={data}/>
+    <FeatureProduct/>
     <Services/>
     <Trusted/>
     </>
