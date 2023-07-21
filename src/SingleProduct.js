@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-import { useProductContext } from "./Context/productcontext";
-import PageNavigation from "./Components/PageNavigation";
-import { MyImage } from "./Components/MyImage";
+import { useProductContext } from "./context/productcontex";
+import PageNavigation from "./components/PageNavigation";
+import {MyImage} from "./components/MyImage";
 import { Container } from "./styles/Container";
 import FormatPrice from "./Helpers/FormatPrice";
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import { Star } from "./Components/Star";
-import { AddToCart } from "./Components/AddToCart";
+import {Star} from "./components/Star";
+import AddToCart from "./components/AddToCart";
 
 const API = "https://api.pujakaitem.com/api/products";
 
-export const SingleProduct = () => {
+const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useProductContext();
 
@@ -89,7 +89,7 @@ export const SingleProduct = () => {
 
             <div className="product-data-info">
               <p>
-              Available:
+                Available:
                 <span> {stock > 0 ? "In Stock" : "Not Available"}</span>
               </p>
               <p>
@@ -192,3 +192,5 @@ const Wrapper = styled.section`
     padding: 0 2.4rem;
   }
 `;
+
+export default SingleProduct;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import FormatPrice from "../Helpers/FormatPrice";
 import { Button } from "../styles/Button";
 
-export const ListView = ({ products }) => {
+const ListView = ({ products }) => {
   return (
     <Wrapper className="section">
       <div className="container grid">

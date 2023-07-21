@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import FilterSection from "./Components/FilterSection";
-import ProductList from "./Components/ProductList";
-import {Sort} from "./Components/Sort";
-import { useFilterContext } from "./Context/Filter_context";
+import FilterSection from "./components/FilterSection";
+import ProductList from "./components/ProductList";
+import Sort from "./components/Sort";
+import { useFilterContext } from "./context/filter_context";
 
-export const Products = () => {
+const Products = () => {
   return (
     <Wrapper>
       <div className="container grid grid-filter-column">

@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import { HeroSection } from './Components/HeroSection'
-import { Services } from './Components/Services'
-import { Trusted } from './Components/Trusted'
-import FeatureProduct from './Components/FeaturedProducts'
+import { HeroSection } from './components/HeroSection'
+import { Services } from './components/Services'
+import { Trusted } from './components/Trusted'
+import FeatureProduct from './components/FeaturedProducts'
 
 export const Home = () => {
 
   const data = {
-    name: "thapa store",
+    name: "store",
   }
   return (
     <>

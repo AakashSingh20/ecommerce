@@ -7,7 +7,8 @@ export const Header = () => {
   return (
     <MainHeader>
         <NavLink to="/">
-            <img src="./images/logo.png" alt='logo img'></img>
+            {/* <img src="./images/logo.png" alt='logo img'></img> */}
+            <h1>STORE</h1>
         </NavLink>
         <Nav/>
 

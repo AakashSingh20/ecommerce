@@ -1,10 +1,10 @@
-import { HeroSection } from "./Components/HeroSection";
-import { useProductContext } from "./Context/productcontext";
+import { HeroSection } from "./components/HeroSection";
+import { useProductContext } from "./context/productcontex";
 
 export const About = () => {
   const { myName } = useProductContext();
   const data = {
-    name: "thapa ecommerce",
+    name: "ecommerce",
   };
   return (
     <>
